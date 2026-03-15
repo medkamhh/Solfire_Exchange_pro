@@ -17,7 +17,7 @@ FETCH_INTERVAL = 30         # Reduced API calls to avoid bans
 CLIENT_POLL_MS = 1500       # Client polling (1.5 seconds for super fast updates)
 TOP_N = 50                  
 
-STARTING_USDT = 11761.34         
+STARTING_USDT = 00.0         
 # ----------------------------
 
 app = Flask(__name__)
@@ -454,7 +454,7 @@ body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--te
   <div class="hero">
     <div class="balance-title"><span>Total Balance</span> <i class="fa-regular fa-eye" onclick="showToast('Balance visibility toggled')"></i></div>
     <div class="balance-val"><span id="usdtBalance">0.00</span> <span style="font-size:16px;font-weight:600">USDT</span></div>
-    <div class="pnl text-green" id="dailyPnl">+4630.34 (63.41%) Today</div>
+    <div class="pnl text-green" id="dailyPnl">+00.0 (00.0%) Today</div>
     
     <div class="action-buttons">
       <button class="btn-action primary" onclick="openDepositModal()"><i class="fa-solid fa-wallet"></i> Deposit</button>
