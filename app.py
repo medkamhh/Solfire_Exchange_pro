@@ -26,7 +26,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY") or secrets.token_hex(24)
 # --- HARDCODED ROBUST INITIAL MARKET ---
 # This ensures the screen is NEVER empty, even if the API fails.
 INITIAL_MARKET = {
-    "BTC": {"id": "bitcoin", "symbol": "BTC", "name": "Bitcoin", "price": 71450.20, "change_24h": 2.1, "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png"},
+    "BTC": {"id": "bitcoin", "symbol": "BTC", "name": "Bitcoin", "price": 71650.80, "change_24h": 2.1, "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png"},
     "ETH": {"id": "ethereum", "symbol": "ETH", "name": "Ethereum", "price": 3850.10, "change_24h": 1.2, "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png"},
     "SOL": {"id": "solana", "symbol": "SOL", "name": "Solana", "price": 175.40, "change_24h": 5.4, "image": "https://assets.coingecko.com/coins/images/4128/large/solana.png"},
     "BNB": {"id": "binancecoin", "symbol": "BNB", "name": "BNB", "price": 590.30, "change_24h": -0.5, "image": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png"},
