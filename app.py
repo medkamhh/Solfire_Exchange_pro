@@ -10,7 +10,7 @@ from functools import wraps
 
 # ---------- CONFIG ----------
 WALLET_ADDRESS = "0x0dacbacc5814c375eb644a10e62832d6d3aa9597"
-NETWORK_LABEL = " Ethereum (ERC20)"
+NETWORK_LABEL = "Ethereum (ERC20)"
 
 VS_CURRENCY = "usd"
 FETCH_INTERVAL = 30         # Reduced API calls to avoid bans
