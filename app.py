@@ -30,7 +30,7 @@ INITIAL_MARKET = {
     "ETH": {"id": "ethereum", "symbol": "ETH", "name": "Ethereum", "price": 3850.10, "change_24h": 1.2, "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png"},
     "SOL": {"id": "solana", "symbol": "SOL", "name": "Solana", "price": 175.40, "change_24h": 5.4, "image": "https://assets.coingecko.com/coins/images/4128/large/solana.png"},
     "BNB": {"id": "binancecoin", "symbol": "BNB", "name": "BNB", "price": 590.30, "change_24h": -0.5, "image": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png"},
-    "XRP": {"id": "ripple", "symbol": "XRP", "name": "XRP", "price": 0.62, "change_24h": 0.8, "image": "https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png"},
+    "XRP": {"id": "ripple", "symbol": "XRP", "name": "XRP", "price": 1.12, "change_24h": 0.8, "image": "https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png"},
     "DOGE": {"id": "dogecoin", "symbol": "DOGE", "name": "Dogecoin", "price": 0.15, "change_24h": 12.0, "image": "https://assets.coingecko.com/coins/images/5/large/dogecoin.png"},
     "ADA": {"id": "cardano", "symbol": "ADA", "name": "Cardano", "price": 0.55, "change_24h": -1.2, "image": "https://assets.coingecko.com/coins/images/975/large/cardano.png"},
     "AVAX": {"id": "avalanche-2", "symbol": "AVAX", "name": "Avalanche", "price": 45.20, "change_24h": 3.1, "image": "https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png"},
